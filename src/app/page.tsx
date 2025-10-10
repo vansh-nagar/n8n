@@ -56,12 +56,14 @@ const page = () => {
   return (
     <>
       <HeroSection />
-      <InfiniteMovingCards
-        items={items}
-        direction="left"
-        speed="normal"
-        className="mt-20"
-      />
+      <div className=" flex justify-center">
+        <InfiniteMovingCards
+          items={items}
+          direction="left"
+          speed="normal"
+          className="mt-20"
+        />
+      </div>
       <Pricing />
     </>
   );
