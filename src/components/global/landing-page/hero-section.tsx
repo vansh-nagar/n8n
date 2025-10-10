@@ -42,7 +42,7 @@ export default function HeroSection() {
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 <div className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                  Modern Solutions for Customer Engagement
+                  Modern Solutions for Automation
                 </div>
                 <div className="mx-auto mt-8 max-w-2xl text-balance text-lg">
                   Highly customizable components for building modern websites
