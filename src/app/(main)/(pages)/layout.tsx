@@ -17,7 +17,7 @@ const Layout = (props: Props) => {
 
       <SidebarInset className="p-4 ">
         <div className=" flex   items-center gap-4 mb-5">
-          <SidebarTrigger /> <div className="">Name</div>
+          <div className="">Name</div>
         </div>
         {props.children}
       </SidebarInset>

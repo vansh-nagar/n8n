@@ -28,6 +28,7 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuItem,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -74,6 +75,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <Link href={"/"} className="  text-2xl font-bold cursor-pointer">
                 <div>LOGO</div>
               </Link>
+              <SidebarTrigger  />
             </header>
           </SidebarMenuItem>
         </SidebarMenu>

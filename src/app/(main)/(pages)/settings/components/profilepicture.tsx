@@ -12,7 +12,7 @@ const ProfilePicture = () => {
   };
 
   return (
-    <div className="mb-5">
+    <div className="">
       <div>
         <FileUploaderRegular
           sourceList="local, camera"
