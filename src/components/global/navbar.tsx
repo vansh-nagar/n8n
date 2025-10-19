@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
+import { UserButton } from "@clerk/nextjs";
 
 const menuItems = [
   { name: "Features", href: "#link" },
@@ -93,7 +94,7 @@ export const Navbar = () => {
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
                 >
-                  <Link href="#">
+                  <Link href="/sign-in">
                     <span>Login</span>
                   </Link>
                 </Button>
@@ -102,7 +103,7 @@ export const Navbar = () => {
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
                 >
-                  <Link href="#">
+                  <Link href="/sign-up">
                     <span>Sign Up</span>
                   </Link>
                 </Button>
@@ -111,7 +112,7 @@ export const Navbar = () => {
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                 >
-                  <Link href="#">
+                  <Link href="/dashboard">
                     <span>Get Started</span>
                   </Link>
                 </Button>

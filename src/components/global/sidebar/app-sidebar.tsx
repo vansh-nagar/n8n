@@ -31,6 +31,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 const data = {
   user: {
     name: "shadcn",
@@ -70,8 +71,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <header className=" flex justify-between w-full  mt-3 mb-3">
-              <div>LOGO</div>
-              <div>N8N</div>
+              <Link href={"/"} className="  text-2xl font-bold cursor-pointer">
+                <div>LOGO</div>
+              </Link>
             </header>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -97,7 +99,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <div className=" flex flex-col gap-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="  justify-start">
+              <Button variant="ghost" className="  justify-start">
                 <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
                 <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
                 <span className="block dark:hidden">Light</span>
@@ -117,12 +119,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </DropdownMenuContent>
           </DropdownMenu>
           <footer className=" flex  gap-3  items-center  px-3 bg-accent rounded-xl h-13">
-            <img
-              src="https://i.pinimg.com/736x/5f/f4/2e/5ff42e7a78c817485574c23b07675eb1.jpg"
-              alt=""
-              className=" h-10 w-10 rounded-full"
-            />
-            <div className=" leading-4">
+            <UserButton />
+            <div className=" leading-4 text-sm">
               vansh nagar <br />
               <span className="text-xs"> Catalazyz@gmail.com</span>
             </div>
